@@ -19,7 +19,7 @@ function App() {
 
       
     });
-     //bug!!!!!!!
+     
     addlistItem("");
 
   };
@@ -31,7 +31,7 @@ function App() {
         <h1>To-Do List</h1>
       </div>
       <div className="form">
-        <input onChange ={handleChange} type="text" />
+        <input onChange ={handleChange} type="text" value ={listItem} />
         <button onClick={handleClick}>
           <span>Add</span>
         </button>
